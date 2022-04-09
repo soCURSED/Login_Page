@@ -1,0 +1,132 @@
+* {
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(238, 238, 238);
+  background-attachment: fixed; /*fix fullpage*/
+  background-size: cover;
+  /* text-align:center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  box-sizing: border-box; */
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  text-align: center;
+}
+.login {
+  width: 400px;
+  line-height: 40px;
+  /* border-radius: 20px;
+  background: #fefefe;
+  box-shadow:  -6px -6px 12px #919191,
+  6px 6px 12px #ffffff; */
+
+  border-radius: 46px;
+  background: linear-gradient(315deg, #fefefe, #cecece);
+  box-shadow: -10px -10px 20px #cecece, 10px 10px 20px #ffffff;
+
+  font-size: 1em;
+  padding: 40px;
+}
+.login .header {
+  line-height: 50px;
+
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.btn {
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  border-width: 0px 7px 0px 7px;
+  width: 6.5em;
+  transition: 0.2s ease;
+  outline: none;
+  border: none;
+  box-shadow: none !important;
+}
+.btn:hover {
+  transform: scale(1.3);
+  border-width: 0px 10px 0px 10px;
+  color: black;
+  outline: none;
+  border: none;
+  box-shadow: none !important;
+  background-color: transparent;
+}
+.btn:active {
+  transform: scale(1.3);
+  outline: none;
+  border: none;
+  box-shadow: none !important;
+  transform: scale(1.05);
+  background-color: transparent;
+}
+#names {
+  font-size: 1em;
+
+  /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%)   */
+}
+#pass {
+  font-size: 1em;
+  /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%) */
+}
+#name-input {
+  border: 0 none rgb(0, 0, 0);
+  border-bottom: 0.5px solid rgb(0, 0, 0);
+  border-radius: 0;
+  text-transform: none;
+  text-align: center;
+  margin-bottom: 1em;
+  background-color: transparent;
+}
+#name-input:focus {
+  outline: none;
+  background-color: transparent;
+}
+#pass-input {
+  border: 0 none rgb(0, 0, 0);
+  border-bottom: 0.5px solid rgb(0, 0, 0);
+  border-radius: 0;
+  text-align: center;
+  background-color: transparent;
+  text-transform: none;
+  margin-bottom: 1em;
+}
+#pass-input:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+.showORhide img {
+  padding-bottom: 1em;
+}
+
+#contact {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  transition: 0.2s ease;
+  margin-top: -16em;
+  font-size: 1em;
+  font-weight: 100;
+}
+#contact:hover {
+  transform: scale(1.1);
+  font-size: 1em;
+  font-weight: 100;
+}
+
+@media (max-width: 500px) {
+  .login {
+    width: 20em;
+  }
+}
